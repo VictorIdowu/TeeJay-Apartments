@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon-64.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <title>TeeJay Apartments</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="top">
+        <a href="#"
+          ><img class="logo" src="img/TeeJay.svg" alt="brand logo"
+        /></a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#features">Features</a></li>
+            <li><a class="main-nav-link" href="#agent">Become an Agent</a></li>
+            <li><a class="main-nav-link" href="#">Contact Us</a></li>
+            <li>
+              <a class="main-nav-link nav-apartment" href="#apartments"
+                >Apartments</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <section class="hero container">
+        <!-- HERO -->
+        <div class="hero-left">
+          <p class="hero-text">PROVIDING YOU WITH COMFORT AS YOU DEFINE IT</p>
+          <h1 class="heading-hero">
+            Nothing beats the comfort of your own room when you're away from
+            home.
+          </h1>
+          <div>
+            <div class="info">
+              <p class="hero-p"><span class="num">18</span>Cities</p>
+              <p class="hero-p"><span class="num">750</span>Apartments</p>
+              <p class="hero-p"><span class="num">65</span>Locations</p>
+            </div>
+          </div>
+          <div class="reviews">
+            <div class="review-img">
+              <img src="img/customers/customer-1.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-2.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-3.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-4.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-5.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-6.jpg" alt="Customer photo" />
+            </div>
+            <p class="review-text"><span>100+</span> customers reviews!</p>
+          </div>
+        </div>
+        <!--  -->
+        <!-- FORM -->
+        <aside class="form">
+          <h3 class="form-heading">Find an Apartment</h3>
+          <form class="find-form">
+            <div>
+              <label for="Check-in">Check-in:</label>
+              <input id="Check-in" type="date" name="Check-in" required />
+            </div>
+
+            <div>
+              <label for="Check-out">Check-out:</label>
+              <input id="Check-out" type="date" name="Check-out" required />
+            </div>
+
+            <div>
+              <label for="guest">Guest:</label>
+              <select id="guest" name="guest" required>
+                <option value="">&#8254;&#8254;</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="location">Location:</label>
+              <select id="location" name="location" required>
+                <option value="">&#8254;&#8254;&#8254;&#8254;</option>
+                <option value="1">Lekki</option>
+                <option value="2">Banana Island</option>
+                <option value="3">Eko Atlantic city</option>
+                <option value="4">Abuja</option>
+                <option value="5">Ibadan</option>
+                <option value="6">Kano</option>
+                <option value="7">Benin</option>
+                <option value="8">Port Harcourt</option>
+                <option value="9">Owerri</option>
+                <option value="10">Lakowe</option>
+              </select>
+            </div>
+
+            <button class="btn-form">Search</button>
+          </form>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <!--  -->
+      <!-- POPULAR APARTMENT -->
+      <section class="popular container">
+        <div class="section-top">
+          <p class="heading-support">&#8212;<span>Popular</span></p>
+          <h2 class="heading-secondary">Our Popular Apartments</h2>
+        </div>
+
+        <div class="popular-apartments">
+          <aside class="popular-apartment">
+            <img
+              class="p-img"
+              src="img/popular/popular1.jpg"
+              alt="living-roon image of apartment"
+            />
+            <div class="p-body">
+              <h3 class="h3-popular">Sandler's Place</h3>
+              <ul class="p-info">
+                <li>
+                  <span class="icon"><ion-icon name="bed"></ion-icon></span
+                  ><span>Bed type:</span> 4 bedroom &#8212; Duplex
+                </li>
+                <li>
+                  <span class="icon"><ion-icon name="location"></ion-icon></span
+                  ><span>Location:</span> Banana Island
+                </li>
+                <li class="p-price">&#8358;<span>250,000</span> /per night</li>
+              </ul>
+              <div class="popular-btn">
+                <a class="p-btn" href="#">BOOK</a>
+                <a class="p-btn" href="#">DETAILS</a>
+              </div>
+            </div>
+          </aside>
+
+          <aside class="popular-apartment">
+            <img
+              class="p-img"
+              src="img/popular/popular2.jpg"
+              alt="living-roon image of apartment"
+            />
+            <div class="p-body">
+              <h3 class="h3-popular">Ross Haus</h3>
+              <ul class="p-info">
+                <li>
+                  <span class="icon"><ion-icon name="bed"></ion-icon></span
+                  ><span>Bed type:</span> 1 bedroom
+                </li>
+                <li>
+                  <span class="icon"><ion-icon name="location"></ion-icon></span
+                  ><span>Location:</span> Lekki
+                </li>
+                <li class="p-price">&#8358;<span>45,000</span> /per night</li>
+              </ul>
+              <div class="popular-btn">
+                <a class="p-btn" href="#">BOOK</a>
+                <a class="p-btn" href="#">DETAILS</a>
+              </div>
+            </div>
+          </aside>
+
+          <aside class="popular-apartment">
+            <img
+              class="p-img"
+              src="img/popular/popular3.jpg"
+              alt="living-roon image of apartment"
+            />
+            <div class="p-body">
+              <h3 class="h3-popular">Casa Royale</h3>
+              <ul class="p-info">
+                <li>
+                  <span class="icon"><ion-icon name="bed"></ion-icon></span
+                  ><span>Bed type:</span> 3 bedroom
+                </li>
+                <li>
+                  <span class="icon"><ion-icon name="location"></ion-icon></span
+                  ><span>Location:</span> Eko Atlantic city, V.I
+                </li>
+                <li class="p-price">&#8358;<span>135,000</span> /per night</li>
+              </ul>
+              <div class="popular-btn">
+                <a class="p-btn" href="#">BOOK</a>
+                <a class="p-btn" href="#">DETAILS</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="comment">
+          <aside class="ceo">
+            <p class="ceo-name">Daniel Benson</p>
+            <p class="ceo-text">CEO / Co-founder</p>
+          </aside>
+          <p class="ceo-comment">
+            <span>&#8220;</span>You can expect spacious living areas, a modern
+            kitchen and any amenities that you might need. Whether you are
+            visiting on business or pleasure, our hospitality is bound to exceed
+            your expectations.
+          </p>
+        </div>
+      </section>
+      <!--  -->
+      <!-- FEATURES -->
+      <section class="features-gallery" id="features">
+        <div class="features container">
+          <aside class="feature-top">
+            <h3 class="heading-secondary">Apartment Features</h3>
+            <p class="feature-p">
+              Our apartments are optimised to exceed your expectations with
+              carefully selected amenities to keep you efficient, fit,
+              entertained. What we promise is not just comfort, but complete
+              satisfaction.
+            </p>
+          </aside>
+          <div class="features-list">
+            <ul>
+              <li>
+                <span class="icon"><ion-icon name="power"></ion-icon></span>24/7
+                power supply
+              </li>
+              <li>
+                <span class="icon"><ion-icon name="tv"></ion-icon></span>Netflix
+                and DSTV
+              </li>
+              <li>
+                <span class="icon"
+                  ><ion-icon name="game-controller"></ion-icon></span
+                >PlayStation 5
+              </li>
+              <li>
+                <span class="icon"><ion-icon name="wifi"></ion-icon></span
+                >Unlimited Wi-Fi
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span class="icon"><ion-icon name="barbell"></ion-icon></span
+                >Fitness facilities
+              </li>
+              <li>
+                <span class="icon"><ion-icon name="sparkles"></ion-icon></span
+                >Optimally located
+              </li>
+              <li>
+                <span class="icon"><ion-icon name="mic"></ion-icon></span>24/7
+                customers support
+              </li>
+              <li>
+                <span class="icon"
+                  ><ion-icon name="lock-closed"></ion-icon></span
+                >Secured locations
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--  -->
+        <!-- GALLERY -->
+        <div class="container gallery">
+          <div class="section-top">
+            <p class="heading-support explore">&#8212;<span>Explore</span></p>
+            <h2 class="heading-secondary gallery-top">Apartments Gallery</h2>
+          </div>
+          <div class="more-l">
+            <div></div>
+            <a class="more" href="#">See more images<span>&#8594;</span></a>
+          </div>
+          <div class="gallery-imgs slider">
+            <div class="slide">
+              <img
+                class="gallery-img l-3"
+                src="img/gallery/gallery1.jpg"
+                alt="picture of an apartment"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="gallery-img f-3"
+                src="img/gallery/gallery2.jpg"
+                alt="picture of an apartment"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="gallery-img f-3"
+                src="img/gallery/gallery3.jpg"
+                alt="picture of an apartment"
+              />0
+            </div>
+            <div class="slide">
+              <img
+                class="gallery-img-big"
+                src="img/gallery/gallery4.jpg"
+                alt="picture of an apartment"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="gallery-img-big"
+                src="img/gallery/gallery5.jpg"
+                alt="picture of an apartment"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="gallery-img-big"
+                src="img/gallery/gallery6.jpg"
+                alt="picture of an apartment"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="gallery-img-big"
+                src="img/gallery/gallery7.jpg"
+                alt="picture of an apartment"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="gallery-img-big"
+                src="img/gallery/gallery8.jpg"
+                alt="picture of an apartment"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="gallery-img-big"
+                src="img/gallery/gallery9.jpg"
+                alt="picture of an apartment"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="gallery-img-big"
+                src="img/gallery/gallery10.jpg"
+                alt="picture of an apartment"
+              />
+            </div>
+            <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button>
+            <div class="dots"></div>
+            <!-- <img
+              class="gallery-img f-3"
+              src="img/gallery/gallery1.jpg"
+              alt="picture of an apartment"
+            />
+            <img
+              class="gallery-img f-3"
+              src="img/gallery/gallery3.jpg"
+              alt="picture of an apartment"
+            />
+            <img
+              class="gallery-img-big"
+              src="img/gallery/gallery5.jpg"
+              alt="picture of an apartment"
+            />
+            <img
+              class="gallery-img l-3"
+              src="img/gallery/gallery6.jpg"
+              alt="picture of an apartment"
+            />
+            <img
+              class="gallery-img l-3"
+              src="img/gallery/gallery7.jpg"
+              alt="picture of an apartment"
+            /> -->
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <!-- Apartments -->
+      <section class="apartments container" id="apartments">
+        <h3 class="h3-apartment">Our Apartments</h3>
+
+        <!-- Apartment1 -->
+        <div class="apartment">
+          <a href="#" class="apartment-img"
+            ><img src="img/apartments/apartment2.jpg" alt="bedroom picture"
+          /></a>
+          <div class="a-body">
+            <h3 class="h3-apartment">Sandler's Place</h3>
+            <ul class="a-info">
+              <li>
+                <span class="icon"><ion-icon name="eye"></ion-icon></span
+                ><span>View:</span>Eko Atlantic City view
+              </li>
+              <li>
+                <span class="icon"><ion-icon name="bed"></ion-icon></span
+                ><span>Bed Type:</span> 4 bedroom &#8212; Duplex
+              </li>
+              <li>
+                <span class="icon"><ion-icon name="star"></ion-icon></span
+                ><span>Amenities:</span>Free Wi-Fi, Gym facilities, Swimming
+                Pool, Netflix & DSTV
+              </li>
+              <li>
+                <span class="icon"><ion-icon name="location"></ion-icon></span
+                ><span>Location:</span> Eko Atlantic City, Victoria Island
+              </li>
+              <li class="a-price">&#8358;<span>150,000</span> /per night</li>
+            </ul>
+            <div class="apartment-btn">
+              <a href="#">BOOK</a>
+              <a href="#">DETAILS</a>
+            </div>
+          </div>
+        </div>
+        <!-- Apartment2 -->
+        <div class="apartment">
+          <div class="a-body">
+            <h3 class="h3-apartment">Ross Haus</h3>
+            <ul class="a-info">
+              <li></li>
+              <!-- <li><span class="icon"><ion-icon name="bed-outline"></ion-icon></span><span>View:</span>Eko Atlantic City view</li> -->
+              <li>
+                <span class="icon"><ion-icon name="bed"></ion-icon></span
+                ><span>Bed Type:</span> 3 bedroom
+              </li>
+              <li>
+                <span class="icon"><ion-icon name="star"></ion-icon></span
+                ><span>Amenities:</span>Free Wi-Fi, Gym facilities, Netflix &
+                DSTV
+              </li>
+              <li>
+                <span class="icon"><ion-icon name="location"></ion-icon></span
+                ><span>Location:</span>Lekki
+              </li>
+              <li class="a-price">&#8358;<span>95,000</span> /per night</li>
+            </ul>
+            <div class="apartment-btn">
+              <a href="#">BOOK</a>
+              <a href="#">DETAILS</a>
+            </div>
+          </div>
+          <a href="#" class="apartment-img"
+            ><img src="img/apartments/apartment3.jpg" alt="bedroom picture"
+          /></a>
+        </div>
+        <!-- Apartment3 -->
+        <div class="apartment">
+          <a href="#" class="apartment-img"
+            ><img src="img/apartments/apartment1.jpg" alt="bedroom picture"
+          /></a>
+          <div class="a-body">
+            <h3 class="h3-apartment">Casa Royale</h3>
+            <ul class="a-info">
+              <li>
+                <span class="icon"><ion-icon name="eye"></ion-icon></span
+                ><span>View:</span>Sea view
+              </li>
+              <li>
+                <span class="icon"><ion-icon name="bed"></ion-icon></span
+                ><span>Bed Type:</span> 4 bedroom &#8212; Duplex
+              </li>
+              <li>
+                <span class="icon"><ion-icon name="star"></ion-icon></span
+                ><span>Amenities:</span>Free Wi-Fi, Gym facilities, Swimming
+                Pool, Netflix & DSTV
+              </li>
+              <li>
+                <span class="icon"><ion-icon name="location"></ion-icon></span
+                ><span>Location:</span>Banana Island
+              </li>
+              <li class="a-price">&#8358;<span>250,000</span> /per night</li>
+            </ul>
+            <div class="apartment-btn">
+              <a href="#">BOOK</a>
+              <a href="#">DETAILS</a>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <a href="#" class="one">1</a>
+          <a href="#" class="two">2</a>
+          <a href="#" class="three">3</a>
+          <a href="#" class="next">Next <span>&#8594;</span></a>
+        </div>
+      </section>
+      <!--  -->
+      <!-- AGENT SECTION -->
+      <section class="agent" id="agent">
+        <div class="agent-c container">
+          <div class="section-top agent-in">
+            <p class="heading-support explore">
+              &#8212;<span>Earn by Referring</span>
+            </p>
+            <h2 class="heading-secondary b-a">Become an Agent</h2>
+          </div>
+          <p class="agent-paragraph">
+            Earn money for every booking you secure successfully as an agent.
+          </p>
+          <a class="agent-btn" href="#">Become an Agent</a>
+        </div>
+        <img class="agent-img" src="img/agent.jpg" alt="money picture" />
+      </section>
+
+      <aside class="google-map">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31716.49823943725!2d3.4535066628816242!3d6.450198251340395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf452da3bd44b%3A0x47331fb41adc9d28!2sLekki%20Phase%201%20106104%2C%20Lekki!5e0!3m2!1sen!2sng!4v1662990384362!5m2!1sen!2sng"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </aside>
+    </main>
+    <!-- Whatsapp link -->
+    <aside class="whatsapp">
+      <a class="w-btn" href="#"
+        ><span><ion-icon name="logo-whatsapp"></ion-icon></span> Chat with us</a
+      >
+    </aside>
+    <!--  -->
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-b container">
+        <div class="footer-l">
+          <a href="#"><img class="logo" src="img/TeeJay.svg"</a><br />
+          <ul class="footer-list">
+            <li><p>Accepted payment methods</p></li>
+            <li>
+              <img
+                src="https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/07/payments.png"
+                alt="payment method logos images"
+              />
+            </li>
+          </ul>
+          <p class="copy">
+            Copyright &copy; <span class="year">2027</span> by Omnifood, Inc.
+            All rights reserved.
+          </p>
+        </div>
+
+        <div class="footer-last">
+          <h3 class="form-heading">For Customers</h3>
+          <ul class="footer-list">
+            <li><a href="#">Our Shortlets in Lekki</a></li>
+            <li><a href="#">Our Abuja Apartments</a></li>
+            <li><a href="#">Enjoy Our Ibadan Apartments</a></li>
+          </ul>
+          <a class="terms" href="#">Terms and Conditions</a>
+        </div>
+
+        <div class="footer-l">
+          <h3 class="form-heading">Contact Us</h3>
+          <address class="contacts">
+            <a
+              >1c Some Around, off Web road, Design Figma Phase 2, Lagos. 100001
+              | Nigeria</a
+            ><br />
+            <a class="footer-link" href="mailto:businessname@gmail.com"
+              ><span></span>businessname@gmail.com</a
+            ><br />
+            <a class="footer-link" href="tel:08100000001"
+              ><span></span>08100000001</a
+            ><br />
+            <a href="#"><span></span>Help center</a>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
