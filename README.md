@@ -1,5 +1,5 @@
 ### Links
-- Solution Site URL: <a href='https://github.com/VictorIdowu/Minimum-Living-Cost-Landing-page.git'>Github</a>
+- Solution Site URL: <a href='https://github.com/VictorIdowu/TeeJay-Apartments.git'>Github</a>
 - Live Site URL: <a href='https://minimal-living-cost-landing-page.netlify.app/'>Netlify</a>
 
 ## Author 
